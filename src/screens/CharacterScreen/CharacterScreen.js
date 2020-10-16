@@ -90,7 +90,6 @@ class CharacterScreen extends PureComponent {
 CharacterScreen.navigationOptions = () => ({
   headerStyle: {
     backgroundColor: "black",
-    marginTop: Platform.OS==="ios" ? 20 : 0
   },
   headerTitle: () => <Header color="yellow" title="List of Characters" />
 });

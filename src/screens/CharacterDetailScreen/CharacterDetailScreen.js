@@ -2,13 +2,8 @@ import React, { PureComponent } from "react";
 import {
   Text,
   View,
-  Platform,
   StyleSheet,
   FlatList,
-  TouchableHighlight,
-  Alert,
-  Image,
-  RefreshControl,
 } from "react-native";
 
 import { Header, HeaderLeftButton } from "../../components";
@@ -107,7 +102,6 @@ class CharacterDetailScreen extends PureComponent {
 CharacterDetailScreen.navigationOptions = ({ navigation }) => ({
   headerStyle: {
     backgroundColor: "black",
-    marginTop: Platform.OS==="ios" ? 20 : 0
   },
   headerTitle: () => <Header color="yellow" title={navigation.state.params.name} />,
   headerLeft: () => <HeaderLeftButton navigation={navigation} />

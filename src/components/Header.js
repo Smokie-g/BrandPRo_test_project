@@ -18,6 +18,7 @@ const Android = styled.Text`
   text-align: center;
   font-size: 20;
   font-weight: 700;
+  margin-right: 40;
 `;
 
 export const Header = ({ title, color }) =>
